@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <!--- META--->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Velas Artesanales - Aromáticas, Decorativas y Personalizadas">
+  <meta name="description" content="Explora nuestra colección de velas artesanales: aromáticas, decorativas y personalizadas. Perfectas para relajación, meditación y regalos especiales.">
+  <meta name="keywords" content="velas artesanales, velas aromáticas, velas decorativas, velas personalizadas, iluminación, bienestar, relajación">
+  <meta name="author" content="mildestellos">
+  <meta name="robots" content="index, follow">
+    
+  
+  <title>Mil Destellos</title>
+    <!--- favicon--->
+    <link rel="icon" type="image/x-icon" href="../favicon.png">
+    <!--- link CSS--->
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS de Mapa rutas -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <!-- CSS Mapa rutas -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+</head>
+<body>
+
+    
+    <header>
+        
+        
+<!-------------------------------------------------------->
+<!----------------------- NAVBAR ------------------------->                             
+<!-------------------------------------------------------->
+           
+           
+
+            <div class="container-navbar">
+                <nav class="navbar container">
+                    <li class="logo1"><img src="../assets/images/logo.png" alt="logo"></li>
+                    <i class="fa-solid fa-bars"></i>
+                    <ul class="menu">
+                       
+                        <li><a href="../index.html">Inicio</a></li>
+                       
+                        <li><a href="../views/galeria.html">Productos</a></li>
+                       
+                        <li><a href="../views/contacto.html">Contacto</a></li>
+                        
+                        <li><a href="../views/presupuesto.html">Presupuesto</a></li>
+
+                        <li><a href="../views/blog.html">Blog</a></li>
+                        
+                      
+                       
+                
+                    </ul>
+                     
+                    
+
+
+                </nav>
+            
+            </div>
+
+   <!-------------------------------------------------------->
+   <!----------------------- BANNER ------------------------->                             
+   <!-------------------------------------------------------->
+   <section class="banner">
+    <div class="content-banner">
+        <p>Velas Artesanales</p>
+        <h2>100% Natural <br />Aromáticas</h2>
+        <a class="bt" href="./galeria.html">Ver Más</a>
+    </div>
+</section>
+<div class="t2">
+    <i class="fa-solid fa-seedling"></i>
+    Velas de soja 100% artesanas
+
+    <i class="fa-solid fa-fire"></i>
+    Explora nuestros aromas</div>
+
+    <!-------------------------------------------------------->
+   <!----------------------- MAP ----------------------------->                             
+   <!-------------------------------------------------------->
+   <div class="contacto">
+    <h1 class="tituloDonde">Donde Estamos</h1>
+    <p><strong><i class="fa-solid fa-house"></i>Dirección:</strong> C. Mar Egeo 29740, Torre del Mar, Málaga</p>
+    <p><strong><i class="fa-solid fa-phone"></i>Teléfono:</strong> 663423342</p>
+    <p><strong><i class="fa-solid fa-envelope"></i>Email:</strong> mildestellos@gmail.com</p>
+  </div>
+
+  <div id="map"></div>
+    <!-------------------------------------------------------->
+   <!-----------------------FOOTER ------------------------->                             
+   <!-------------------------------------------------------->
+    
+    
+    
+    <footer>
+        <div class="container">
+        
+        
+            <div class="row1">
+                
+           
+                    <ul> 
+                        
+                        <li><img src="../assets/images/logo.png" alt="logo"></li>
+                        <li><i class="fa-solid fa-phone"> 663423333 </i></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i>mildestellos@gmail.com</li>
+                    </ul>
+            </div>
+        
+            <div class="row2">
+            
+                <h2>Redes Sociales</h2>            
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank"><i  class="fa-brands fa-facebook"></i>Facebook</a></li>
+                        <li><a href="https://twitter.com/home?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    </ul>
+            </div>
+         
+
+             <div class="row3">
+                
+              <h2>  Sobre Nosotros </h2>
+            
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./galeria.html">Productos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href=".Presupuesto.html">Historia</a></li>
+                    <li><a href="./views/Blog.html">Blog</a></li>
+                </ul>
+            </div>
+        
+        <div class="row3">
+            
+                <h2>  Otros </h2>
+            
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de coockies</a></li>
+                </ul>
+         </div>  
+       
+      </div>  
+    </footer>
+    <!-- scripts mapa rutas -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+ 
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+  <script src="../js/contacto.js"></script>
+    
+        
+    </body>
+    </html>

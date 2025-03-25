@@ -1,0 +1,23 @@
+{
+    "noticias": [
+      {
+        "titulo": "Beneficios de las velas de cera de abeja",
+        "descripcion": "Las velas de cera de abeja son una alternativa natural y ecológica a las velas de parafina. Descubre sus beneficios para la salud y el medio ambiente.",
+        "imagen": "./assets/images/miel.jpg",
+        "url": "https://nectarius.es/la-cera-de-las-abejas/"
+      },
+      {
+        "titulo": "Aromaterapia con velas naturales",
+        "descripcion": "Las velas aromáticas naturales pueden mejorar el estado de ánimo y reducir el estrés. Aprende cómo elegir la mejor opción para tu bienestar.",
+        "imagen": "./assets/images/terapia.jpg",
+        "url": "https://franciscoaragon.com/los-beneficios-de-las-velas-aromaticas"
+      },
+      {
+        "titulo": "Beneficios y tips para que sus aromas duren más",
+        "descripcion": "Nuevos diseños y materiales eco-friendly están revolucionando la industria de las velas. Conoce las últimas tendencias en velas saludables.",
+        "imagen": "./assets/images/velatips.jpg",
+        "url": "https://balmoria.com/velas-aromaticas/#:~:text=Las%20velas%20arom%C3%A1ticas%20tienen%20la,con%20el%20d%C3%ADa%20a%20d%C3%ADa."
+      }
+    ]
+  }
+  

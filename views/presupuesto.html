@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <!--- META--->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="title" content="Velas Artesanales - Aromáticas, Decorativas y Personalizadas">
+   <meta name="description" content="Explora nuestra colección de velas artesanales: aromáticas, decorativas y personalizadas. Perfectas para relajación, meditación y regalos especiales.">
+   <meta name="keywords" content="velas artesanales, velas aromáticas, velas decorativas, velas personalizadas, iluminación, bienestar, relajación">
+   <meta name="author" content="mildestellos">
+   <meta name="robots" content="index, follow">
+    
+   
+   <title>Mil Destellos</title>
+    <!--- favicon--->
+    <link rel="icon" type="image/x-icon" href="../favicon.png">
+    <!--- link CSS--->
+    <link rel="stylesheet" href="../css/presupuesto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-------------------------------------------------------->
+   <!----------------------- NAVBAR -------------------------->                             
+   <!--------------------------------------------------------->
+    <header>
+        
+        
+
+  
+           
+
+            <div class="container-navbar">
+                <nav class="navbar container">
+                  <li class="logo1"><img src="../assets/images/logo.png" alt="logo"></li>
+                    <i class="fa-solid fa-bars"></i>
+                    <ul class="menu">
+                       
+                      <li><a href="../index.html">Inicio</a></li>
+                       
+                        <li><a href="../views/galeria.html">Productos</a></li>
+                       
+                        <li><a href="../views/contacto.html">Contacto</a></li>
+                        
+                        <li><a href="../views/presupuesto.html">Presupuesto</a></li>
+
+                        <li><a href="../views/blog.html">Blog</a></li>
+                        
+                      
+                       
+                
+                    </ul>
+                     
+                    
+
+
+                </nav>
+            
+            </div>
+
+
+    </header>
+
+
+   <!-------------------------------------------------------->
+   <!----------------------- BANNER ------------------------->                             
+   <!-------------------------------------------------------->
+          <section class="banner">
+              <div class="content-banner">
+                  <p>Velas Artesanales</p>
+                  <h2>100% Natural <br />Aromáticas</h2>
+                  <a class="bt" href="./contacto.html">Donde Estamos</a>
+        </div>
+    </section>
+    <div class="t2">
+        <i class="fa-solid fa-seedling"></i>
+        Velas de soja 100% artesanas
+    
+        <i class="fa-solid fa-fire"></i>
+        Explora nuestros aromas</div>
+
+
+        
+   <!-------------------------------------------------------->
+   <!------------------ FORMULARIO -------------------------->                             
+   <!-------------------------------------------------------->
+
+        <div class="container1">
+          
+      
+          <form 
+            id="presupuestoForm" 
+            action="mailto:joseli10@hotmail.es" 
+            method="POST" 
+            enctype="text/plain" 
+            novalidate
+          >
+            <!-- PARTE 1: Datos de contacto -->
+            <fieldset>
+              <legend>Datos de contacto</legend>
+      
+              <label for="nombre">Nombre (sólo letras, máx. 15 caracteres):</label>
+              <input 
+                type="text" 
+                id="nombre" 
+                name="nombre" 
+                maxlength="15" 
+                required 
+                placeholder="Ej: Carlos"
+              />
+              <span id="errorNombre" class="error">El nombre no es válido.</span>
+      
+              <label for="apellidos">Apellidos (sólo letras, máx. 40 caracteres):</label>
+              <input 
+                type="text" 
+                id="apellidos" 
+                name="apellidos" 
+                maxlength="40" 
+                required 
+                placeholder="Ej: García López"
+              />
+              <span id="errorApellidos" class="error">Los apellidos no son válidos.</span>
+      
+              <label for="telefono">Teléfono (sólo números, máx. 9 dígitos):</label>
+              <input 
+                type="text" 
+                id="telefono" 
+                name="telefono" 
+                maxlength="9" 
+                required 
+                placeholder="Ej: 123456789"
+              />
+              <span id="errorTelefono" class="error">El teléfono no es válido.</span>
+      
+              <label for="email">Correo electrónico:</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                placeholder="moyanobueno@gmail.com"
+              />
+              <span id="errorEmail" class="error">El correo electrónico no es válido.</span>
+            </fieldset>
+      
+            <!-- PARTE 2: Presupuesto Precios -->
+            <fieldset>
+              <legend>Presupuesto</legend>
+      
+              <label for="producto">Seleccione un producto:</label>
+              <select id="producto" name="producto" required>
+                <option value="">-- Selecciona --</option>
+                <option value="30">Cereza - 30€</option>
+                <option value="30">Menta - 30€</option>
+                <option value="30">Vainilla - 30€</option>
+                <option value="30">Caoba - 30€</option>
+                <option value="30">JAzmín - 30€</option>
+                <option value="30">Ambar - 30€</option>
+                <option value="30">Manzana - 30€</option>
+                <option value="30">Avellana - 30€</option>
+                <option value="30">Lavanda - 30€</option>
+                <option value="30">Citricos y lavanda - 30€</option>
+                <option value="30">Cookie - 30€</option>
+                <option value="30">V. Magdalena - 30€</option>
+                <option value="30">Pack 3 velas - 80€</option>
+              </select>
+      
+              <label for="plazo">Plazo (en días/meses):</label>
+              <input 
+                type="number" 
+                id="plazo" 
+                name="plazo"
+                min="1" 
+                required
+                placeholder="Ej: 5"
+              />
+      
+              <div class="extras">
+                <label>Seleccione extras:</label>
+                <label>
+                  <input type="checkbox" name="extras" value="10" />
+                  Embalaje premium (+10€)
+                </label>
+                <label>
+                  <input type="checkbox" name="extras" value="10" />
+                  Envío urgente (+10€)
+                </label>
+                <label>
+                  <input type="checkbox" name="extras" value="30" />
+                  Seguro a todo riesgo (+30€)
+                </label>
+              </div>
+      
+              <label for="presupuestoFinal">Presupuesto final (€):</label>
+              <output id="presupuestoFinal" name="presupuestoFinal">0</output>
+      
+              <br><br>
+              <label>
+                <input 
+                  type="checkbox" 
+                  id="condiciones" 
+                  name="condiciones" 
+                  required 
+                /> 
+                Acepto las condiciones de privacidad
+              </label>
+            </fieldset>
+      
+            <div class="botones">
+              <button type="reset">Restablecer</button>
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+
+
+    <!-------------------------------------------------------->
+   <!----------------------- FOOTER -------------------------->                             
+   <!--------------------------------------------------------->
+    
+   
+   <footer>
+        <div class="container">
+        
+        
+            <div class="row1">
+                
+           
+                    <ul> 
+                        
+                        <li><img src="../assets/images/logo.png" alt="logo"></li>
+                        <li><i class="fa-solid fa-phone"> 663423333 </i></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i>pancomido@gmail.com</li>
+                    </ul>
+            </div>
+        
+            <div class="row2">
+            
+                <h2>Redes Sociales</h2>            
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank"><i  class="fa-brands fa-facebook"></i>Facebook</a></li>
+                        <li><a href="https://twitter.com/home?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    </ul>
+            </div>
+         
+
+             <div class="row3">
+                
+              <h2>  Sobre Nosotros </h2>
+            
+                <ul>
+                    <li><a href="../views/Index.html">Inicio</a></li>
+                    <li><a href="../views/galeria.html">Productos</a></li>
+                    <li><a href="../views/contacto.html">Contacto</a></li>
+                    <li><a href="../views/Presupuesto.html">Presupuesto</a></li>
+                    <li><a href="../views/Blog.html">Blog</a></li>
+                </ul>
+            </div>
+        
+        <div class="row3">
+            
+                <h2>  Otros </h2>
+            
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de coockies</a></li>
+                </ul>
+         </div>  
+       
+      </div>  
+    </footer>
+    <script src="../js/Presupuesto.js"></script> 
+  </body>
+  </html>

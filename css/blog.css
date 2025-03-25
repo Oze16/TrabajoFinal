@@ -1,0 +1,342 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+
+:root{
+    --primary-color: #d7c8c8;
+    --background-color:#43483c; 
+    --dark-color:rgb(70, 67, 67) ;
+}
+
+
+
+*{
+    margin: 0;
+    
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+   
+
+
+/* ***SCROLL*** */
+body::-webkit-scrollbar{
+    width: 10px;
+    background: #ebe9e8;
+       
+    }
+    body::-webkit-scrollbar-thumb{
+        background-color:#d8acacd2;
+        border-radius: 3px;
+    }
+
+/* ********************************** */
+/*               NAVBAR              */
+/* ********************************** */
+.logo1{
+    display: flex;
+    width: 150px;
+    height:150px;
+    margin-left: 20px;
+}
+.container-navbar{
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /*barra fija */
+    box-shadow: 0 0 20px black;
+    
+
+  }
+
+
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem 0;
+    
+        
+   
+ 
+
+}
+
+.navbar .fa-bars{
+    display:none;
+}
+.menu{
+    display: flex;
+    gap: 2rem;
+
+}
+
+.menu li{
+    list-style-type: none;
+
+}
+.menu a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color:rgb(0, 0, 0);
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 95%;
+
+}
+.menu a::after{
+    content:'';
+    width: 1.5rem;
+    height: 1px;
+    background-color: var(--background-color);
+    position:absolute;
+    bottom: -3px;
+    left:50%;
+    transform:translate(-50%, 50%);
+    opacity: 0;
+	transition: all 0.3s ease;
+}
+
+.menu a:hover::after {
+	opacity: 1;
+}
+
+.menu a:hover {
+	color: #bc9595;
+}
+
+
+
+/* ********************************** */
+/*               BLOG               */
+/* ********************************** */
+
+
+
+/* Estilos base */
+body {
+    margin: 0;
+    font-family: 'poppins';
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    font-size: 80%;
+  }
+  /* Encabezado con imagen de fondo */
+  .header-blog {
+    background: url('../assets/images/velas-segun-estacion.png') no-repeat center center/cover;
+    color: #000000;
+    padding: 3rem 1rem;
+    text-align: center;
+   padding: 200px;
+   
+    
+    
+    
+
+    text-transform: uppercase;
+    font-family:'calibri' ;
+    
+    
+
+  }
+  .header-blog, h1 {
+    color:white;
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(253, 252, 252, 0.5);
+  margin-top: 100px;
+  }
+  /* Contenedor central para el contenido */
+  .container-blog {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+  }
+  /* Índice de contenido */
+  .indice {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-left: 4px solid #cc9090;
+    margin-bottom: 2rem;
+  }
+  .indice h2 {
+    margin-top: 0;
+  }
+  .indice ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .indice li {
+    margin: 0.5rem 0;
+  }
+  .indice a {
+    color: #a47979;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .indice a:hover {
+    color: #e65100;
+  }
+  /* Estilos para títulos y párrafos */
+  h2, h3, h4 {
+    color: #333;
+    margin-top: 1.5rem;
+    
+        
+        line-height: 100px;
+        color:#090909d2;
+    
+        text-transform: uppercase;
+        font-family:'calibri' ;
+        margin-bottom:20px ;
+        
+    
+  }
+  p {
+    margin: 1rem 0;
+    text-align: justify;
+  }
+  ul, ol {
+    margin: 1rem 0 1rem 1.5rem;
+  }
+  /* Estilo para la sección de preguntas */
+  .faq {
+    margin-top: 2rem;
+  }
+  .faq h3 {
+    border-bottom: 2px solid #e2e2e2;
+    padding-bottom: 0.5rem;
+  }
+  
+  a {
+    transition: color 0.3s;
+  }
+  
+  img{
+    display: flex;
+   
+ justify-content: center;
+  }
+
+
+
+  /* ********************************** */
+ /*               FOOTER               */
+ /* ********************************** */
+
+
+
+
+footer{
+    background:#c4b5b5d2 ;
+    width:100%;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 0 20px black;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding:20px;
+    
+}
+
+.container a{
+    color: black;
+   
+}  
+.container ul{
+    padding: 20px;
+}
+
+.row1{
+    padding:5px;
+    margin-top: 5px;
+    
+    
+}
+ul li img{ 
+    width:120px;
+    height:120px;
+    
+    margin-top: 30px;
+
+}
+ul li{
+    list-style-type: none;
+    padding: 10px;;
+
+}
+i{
+    padding: 10px;;
+
+}
+.row2{
+margin-top: 10px;
+margin-bottom: 10px;
+padding:1px;
+}
+.row2 a{
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+
+.row3 ,h2{
+    margin-top:10px;
+    margin-bottom: 10px;
+   
+    padding:10px;
+    
+}
+.row3 a{
+    padding:10px;
+    text-decoration: none;
+}
+.row3 li{
+    padding:10px;
+}
+
+
+@media (max-width: 768px)
+
+{
+  .menu{
+      text-align: center;
+      flex-direction: column;
+  }
+  .logo1 img{
+    display: flex;
+    width: 150px;
+    height:150px;
+    
+
+    
+}
+  .container{
+    text-align: center;
+        flex-direction: column;
+    
+  }  
+}
+
+/* Media  */
+@media (max-width: 600px) {
+  .header-blog, h1 {
+    font-size: 2rem;
+  }
+}
